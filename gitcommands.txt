@@ -1,0 +1,59 @@
+# ==========================
+# GIT + GITHUB CHEATSHEET
+# ==========================
+
+# --- Setup (one-time) ---
+git config --global user.name "YourName"
+git config --global user.email "youremail@example.com"
+
+# Check config
+git config --list
+
+# --- Start a project ---
+git init                          # Initialize repo in current folder
+git clone <repo_url>              # Clone a GitHub repo locally
+
+# --- Connect to remote ---
+git remote add origin <repo_url>  # Link local repo with GitHub
+git remote -v                     # Verify remotes
+
+# --- Stage & Commit ---
+git status                        # Show changes
+git add .                         # Stage all files
+git add <file>                    # Stage specific file
+git commit -m "Commit message"    # Commit with message
+
+# --- Push (upload to GitHub) ---
+git branch -M main                # Rename branch to main (first time)
+git push -u origin main           # First push
+git push                          # Push updates
+
+# --- Pull (download from GitHub) ---
+git pull origin main              # Fetch + merge latest
+git pull origin main --rebase     # Cleaner history
+
+# --- Branching ---
+git branch                        # List branches
+git branch <branch_name>          # Create branch
+git checkout <branch_name>        # Switch branch
+git checkout -b <branch_name>     # Create + switch
+git merge <branch_name>           # Merge into current branch
+git branch -d <branch_name>       # Delete branch
+
+# --- Undo / Reset ---
+git reset --hard HEAD             # Reset to last commit (discard changes)
+git reset --hard <commit_id>      # Reset to specific commit
+git checkout -- <file>            # Discard changes in a file
+
+# --- Logs ---
+git log                           # Commit history
+git log --oneline                 # Compact history
+git diff                          # Show unstaged changes
+git diff --staged                 # Show staged changes
+
+# --- Force Push (CAUTION) ---
+git push origin main --force      # Overwrite GitHub with local
+
+# ==========================
+# END
+# ==========================
