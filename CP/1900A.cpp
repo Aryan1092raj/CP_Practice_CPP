@@ -6,6 +6,7 @@ int main(){
     int t;
     cin >> t;
     while(t--){
-
+        string n;
+        cin >> n;
     }
 }
