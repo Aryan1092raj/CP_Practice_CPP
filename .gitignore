@@ -1,0 +1,23 @@
+# Build and binary files
+*.exe
+*.out
+*.obj
+*.o
+
+# Logs and temp
+*.log
+*.tmp
+
+# VS Code settings
+.vscode/
+
+# Competitive Programming Helper plugin files
+*.cph
+
+# OS-specific clutter
+.DS_Store
+Thumbs.db
+
+# Backup / autosave
+*~
+*.bak
