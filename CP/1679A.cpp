@@ -5,6 +5,13 @@ using ll = long long ;
 #define all(x) (x).begin(), (x).end()
 
 void solve(){
+    ll n ; cin >> n;
+    if(n%2 == 1 || n < 4){
+        cout << -1 << nl;
+        return;
+    }
+    ll mx =  ll(n/4) , mn = ll((n+5)/6);
+    cout << mn << " " << mx <<nl;
 
 }
 
